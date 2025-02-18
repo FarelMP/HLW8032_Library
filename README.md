@@ -35,5 +35,5 @@ Volt Coefficient        = 1.88
 Current Coefficient     = 1
 - You can adjust the coefficient value
 
-for more information you can follow the link:
+for more information you can follow the link:<br>
 https://www.lcsc.com/datasheet/lcsc_datasheet_2307271600_Hiliwei-Tech-HLW8032_C128023.pdf
