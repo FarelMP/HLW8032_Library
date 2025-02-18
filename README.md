@@ -30,10 +30,10 @@ $$
 \end{aligned}
 $$
 
-*Typical Coefficient:
-Volt Coefficient        = 1.88
-Current Coefficient     = 1
+* **Typical Coefficient:**<br>
+Volt Coefficient        = 1.88<br>
+Current Coefficient     = 1<br>
 - You can adjust the coefficient value
 
-for more information you can follow the link:<br>
+For more information you can follow the link:<br>
 https://www.lcsc.com/datasheet/lcsc_datasheet_2307271600_Hiliwei-Tech-HLW8032_C128023.pdf
