@@ -1,4 +1,5 @@
 # HLW8032_Library
+[![Latest Release](https://img.shields.io/github/v/release/civetweb/civetweb.svg)](https://github.com/civetweb/civetweb/releases)
 Library HLW8032 file with example application using STM32F407VGT6
 
 The HLW8032 sends 24 bytes data via serial communication in the following format:
