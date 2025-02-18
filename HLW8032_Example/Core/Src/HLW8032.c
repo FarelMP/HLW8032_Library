@@ -29,18 +29,18 @@ void dataParse(uint8_t data) {
 }
 
 void dataProcess(void) {
-	addr->VparamReg 	= (buffer[2]  << 16) | (buffer[3]  <<8) | buffer[4];				//V Param REG merge bytes
-	addr->VReg 			= (buffer[5]  << 16) | (buffer[6]  <<8) | buffer[7];				//V REG merge bytes
-	addr->IparamReg 	= (buffer[8]  << 16) | (buffer[9]  <<8) | buffer[10];				//I Param REG merge bytes
-	addr->IReg 			= (buffer[11] << 16) | (buffer[12] <<8) | buffer[13];			//I REG merge bytes
+	addr->VparamReg 	= (buffer[2]  << 16) | (buffer[3]  <<8) | buffer[4];			//V Param REG merge bytes
+	addr->VReg 		= (buffer[5]  << 16) | (buffer[6]  <<8) | buffer[7];			//V REG merge bytes
+	addr->IparamReg 	= (buffer[8]  << 16) | (buffer[9]  <<8) | buffer[10];			//I Param REG merge bytes
+	addr->IReg 		= (buffer[11] << 16) | (buffer[12] <<8) | buffer[13];			//I REG merge bytes
 	addr->PowparamReg 	= (buffer[14] << 16) | (buffer[15] <<8) | buffer[16];			//P Param REG merge bytes
 	addr->PowReg 		= (buffer[17] << 16) | (buffer[18] <<8) | buffer[19];			//P REG merge bytes
-	addr->PF 			= (buffer[20] <<8)|buffer[21];
+	addr->PF 		= (buffer[20] <<8)|buffer[21];
 
 	ptr->Voltage 		= (float) addr->VparamReg * 1.88 / addr->VReg;				//Vrms
 	ptr->Current 		= (float) addr->IparamReg * 1.88 / addr->IReg;				//Irms
 	ptr->activePower 	= (float) addr->PowparamReg*1.88 / addr->PowReg;			//Active Power
-	ptr->apparentPower 	= (float) ptr->Voltage * ptr->Current;						//Apaprent Power
-	ptr->PF 			= (float) ptr->activePower / ptr->apparentPower;			//PF
+	ptr->apparentPower 	= (float) ptr->Voltage * ptr->Current;					//Apaprent Power
+	ptr->PF 		= (float) ptr->activePower / ptr->apparentPower;			//PF
 }
 
