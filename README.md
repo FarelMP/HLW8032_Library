@@ -30,7 +30,7 @@ $$
 \end{aligned}
 $$
 
-* **Typical Coefficient:**<br>
+**Typical Coefficient:**<br>
 Volt Coefficient        = 1.88<br>
 Current Coefficient     = 1<br>
 - You can adjust the coefficient value
