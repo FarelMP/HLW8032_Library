@@ -17,21 +17,33 @@ The HLW8032 sends 24 bytes data via serial communication in the following format
 | PF REG             |   2          |
 | Checksum REG       |   1          |
 
-Measurements calculation:
-**VOLTAGE**
-  \(\frac{{\text{{Volt param REG}} \times \text{{Volt coefficient*}}}}{{\text{{Volt REG}}}}\)
 
-**CURRENT**
-\(\frac{{\text{{Current param REG}} \times \text{{Current coefficient*}}}}{{\text{{Current REG}}}}\)
+<h2>Measurements calculation:</h2>
 
-**ACTIVE POWER**
-\(\frac{{\text{{Power param REG}} \times \text{{Power coefficient*}}}}{{\text{{Power REG}}}}\)
+**VOLTAGE**  
+\[
+\frac{{\text{{Volt param REG}} \times \text{{Volt coefficient*}}}}{{\text{{Volt REG}}}}
+\]
 
-**APPARENT POWER**
-\( \text{Voltage} \times \text{Current} \)
+**CURRENT**  
+\[
+\frac{{\text{{Current param REG}} \times \text{{Current coefficient*}}}}{{\text{{Current REG}}}}
+\]
 
-**POWER FACTOR**
-\( \frac{\text{Active Power}}{\text{Apparent Power}} \)
+**ACTIVE POWER**  
+\[
+\frac{{\text{{Power param REG}} \times \text{{Volt coefficient}} \times \text{{Current coefficient}}}}{{\text{{Power REG}}}}
+\]
+
+**APPARENT POWER**  
+\[
+\text{Voltage} \times \text{Current}
+\]
+
+**POWER FACTOR**  
+\[
+\frac{\text{Active Power}}{\text{Apparent Power}}
+\]
 
 *Typical Coefficient:
 Volt Coefficient        = 1.88
