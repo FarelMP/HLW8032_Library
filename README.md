@@ -19,15 +19,24 @@ The HLW8032 sends 24 bytes data via serial communication in the following format
 
 
 <h2>Measurements calculation:</h2>
-$$
-\begin{align}
-\text{Voltage} &= \frac{\text{Volt param REG} \times \text{Volt coefficient}^*}{\text{Volt REG}} \\
-\text{Current} &= \frac{\text{Current param REG} \times \text{Current coefficient}^*}{\text{Current REG}} \\
-\text{Active Power} &= \frac{\text{Power param REG} \times \text{Volt coefficient} \times \text{Current coefficient}}{\text{Power REG}} \\
-\text{Apparent Power} &= \text{Voltage} \times \text{Current} \\
-\text{Power Factor} &= \frac{\text{Active Power}}{\text{Apparent Power}}
-\end{align}
-$$
+
+<div style="text-align: left;">
+\[
+\text{Voltage} = \frac{\text{Volt param REG} \times \text{Volt coefficient}^*}{\text{Volt REG}}
+\]
+\[
+\text{Current} = \frac{\text{Current param REG} \times \text{Current coefficient}^*}{\text{Current REG}}
+\]
+\[
+\text{Active Power} = \frac{\text{Power param REG} \times \text{Volt coefficient} \times \text{Current coefficient}}{\text{Power REG}}
+\]
+\[
+\text{Apparent Power} = \text{Voltage} \times \text{Current}
+\]
+\[
+\text{Power Factor} = \frac{\text{Active Power}}{\text{Apparent Power}}
+\]
+</div>
 
 *Typical Coefficient:
 Volt Coefficient        = 1.88
