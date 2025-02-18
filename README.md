@@ -3,20 +3,19 @@ Library HLW8032 file with example application using STM32F407VGT6
 
 The HLW8032 sends 24 bytes data via serial communication in the following format:
 
-| Data Type          | Length |
-|                    | (byte) |
-|:-------------------|:------:|
-| State REG          |   1    |
-| Check REG          |   1    |
-| Volt param REG     |   3    |
-| Volt REG           |   3    |
-| Current param REG  |   3    |
-| Current REG        |   3    |
-| Power Param REG    |   3    |
-| Power REG          |   3    |
-| Data update REG    |   1    |
-| PF REG             |   2    |
-| Checksum REG       |   1    |
+| Data Type          | Length<br>(byte)|
+|:-------------------|:------------:|
+| State REG          |   1          |
+| Check REG          |   1          |
+| Volt param REG     |   3          |
+| Volt REG           |   3          |
+| Current param REG  |   3          |
+| Current REG        |   3          |
+| Power Param REG    |   3          |
+| Power REG          |   3          |
+| Data update REG    |   1          |
+| PF REG             |   2          |
+| Checksum REG       |   1          |
 
 Measurements calculation:
 - Voltage           = (Volt param REG x Volt coefficient*)/Volt REG
