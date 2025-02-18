@@ -35,7 +35,7 @@ void dataProcess(void) {
 	addr->IReg 		= (buffer[11] << 16) | (buffer[12] <<8) | buffer[13];			//I REG merge bytes
 	addr->PowparamReg 	= (buffer[14] << 16) | (buffer[15] <<8) | buffer[16];			//P Param REG merge bytes
 	addr->PowReg 		= (buffer[17] << 16) | (buffer[18] <<8) | buffer[19];			//P REG merge bytes
-	addr->PF 		= (buffer[20] <<8)|buffer[21];
+	addr->PF 		= (buffer[20] <<  8) |  buffer[21];
 
 	ptr->Voltage 		= (float) addr->VparamReg * 1.88 / addr->VReg;				//Vrms
 	ptr->Current 		= (float) addr->IparamReg * 1.88 / addr->IReg;				//Irms
